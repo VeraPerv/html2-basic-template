@@ -1,0 +1,22 @@
+.heading {
+  color: $color-primary;
+  font-family: "Comfortaa", "Arial", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .heading {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .heading {
+    font-size: 52px;
+  }
+}

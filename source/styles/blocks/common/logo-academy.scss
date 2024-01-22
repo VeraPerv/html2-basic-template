@@ -1,10 +1,25 @@
 .logo-academy {
   color: #000000;
+  display: flex;
+  column-gap: 8px;
+  flex-wrap: wrap;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    color: $color-primary-hover;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-primary;
+  }
 }
 
 .logo-academy__text {
   font-size: 11px;
   line-height: normal;
+  padding-top: 8px;
 }
 
 .logo-academy__icon {

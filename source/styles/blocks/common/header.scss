@@ -1,5 +1,7 @@
 .header {
   background-color: $color-backround;
+  //padding-bottom: 4px;
+  z-index: 2;
 }
 
 @media (min-width: $tablet-width) {
