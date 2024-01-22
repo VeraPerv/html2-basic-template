@@ -1,7 +1,18 @@
 /* GLOBAL */
 @import "./global/variables.scss";
 @import "./global/global.scss";
+@import "./global/visually-hidden.scss";
 @import "./global/fonts.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/common/page.scss";
+@import "./blocks/common/header.scss";
+@import "./blocks/common/body.scss";
+@import "./blocks/common/main.scss";
+@import "./blocks/common/logo.scss";
+@import "./blocks/common/nav.scss";
+@import "./blocks/common/menu.scss";
+@import "./blocks/common/toggle.scss";
+@import "./blocks/common/footer.scss";
+@import "./blocks/common/socials.scss";
+@import "./blocks/common/logo-academy.scss";

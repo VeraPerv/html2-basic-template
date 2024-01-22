@@ -1,0 +1,69 @@
+.socials {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid $color-primary;
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    width: 19px;
+    height: 19px;
+    display: block;
+  }
+
+  &--telegram::before {
+    mask-image: url("../../images/icons/stack.svg#telegram");
+    background-color: $color-primary;
+    mask-repeat: no-repeat;
+  }
+
+  &--vk::before {
+    mask-image: url("../../images/icons/stack.svg#vk");
+    background-color: $color-primary;
+    mask-repeat: no-repeat;
+  }
+
+  &--youtube::before {
+    mask-image: url("../../images/icons/stack.svg#youtube");
+    background-color: $color-primary;
+    mask-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .socials {
+
+  }
+
+  .socials__link {
+    width: 40px;
+    height: 40px;
+
+    &--telegram::before {
+      width: 24px;
+      height: 24px;
+    }
+
+    &--vk::before {
+      width: 24px;
+      height: 19px;
+    }
+
+    &--youtube::before {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

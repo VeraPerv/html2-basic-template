@@ -1,0 +1,14 @@
+.toggle {
+  display: none;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+
+@media (max-width: $mobile-width-only) {
+  .toggle {
+    display: block;
+  }
+}

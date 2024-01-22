@@ -1,0 +1,23 @@
+.logo-academy {
+  color: #000000;
+}
+
+.logo-academy__text {
+  font-size: 11px;
+  line-height: normal;
+}
+
+.logo-academy__icon {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .logo-academy__text {
+    font-size: 16px;
+  }
+
+  .logo-academy__icon {
+    width: 26px;
+    height: 32px;
+  }
+}

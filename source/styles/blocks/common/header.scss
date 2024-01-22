@@ -1,0 +1,16 @@
+.header {
+  background-color: $color-backround;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    box-shadow: 0 4px 4px 0 rgba(88, 13, 101, 0.25);
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    padding-bottom: 22px;
+  }
+}
