@@ -5,18 +5,32 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-align: center;
   margin: 0;
   padding: 0;
+
+  &--middle {
+    font-family: "Raleway", "Arial", sans-serif;
+    font-size: 28px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .heading {
     font-size: 48px;
+
+    &--middle {
+      font-size: 28px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .heading {
     font-size: 52px;
+
+    &--middle {
+      font-size: 28px;
+    }
   }
 }

@@ -1,7 +1,7 @@
 .promo {
   min-height: 640px;
   padding-top: 60px;
-  background-color: pink;
+  background-color: #cbd0db;
   background-image: url("../../../images/promo-mobile@2x@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,7 +15,7 @@
 }
 
 .promo__caption {
-  text-align: center;
+  //text-align: center;
   padding: 0 15px;
   margin-bottom: 37px;
 }
@@ -25,12 +25,12 @@
 }
 
 .promo__list {
-  margin: 0 auto 62px;
+  margin: 0 auto 63px;
 }
 
 @media (min-width: $tablet-width) {
   .promo {
-    min-height: 977px;
+    min-height: 924px;
     background-image: url("../../../images/promo-tablet@2x@1x.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -39,11 +39,33 @@
       //background-position: ;
     }
   }
+
+  .promo__wrapper {
+    width: 768px;
+    padding: 83px 33px 0 26px;
+    margin: 0 auto;
+  }
+
+  .promo__caption {
+    margin-left: auto;
+    width: 537px;
+    margin-bottom: 49px;
+  }
+
+  .promo__list {
+    margin: 0 0 53px auto;
+    width: 518px;
+  }
+
+  .promo__break {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .promo {
     min-height: 801px;
+    padding-top: 89px;
     background-image: url("../../../images/promo-desktop@2x@1x.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -51,5 +73,20 @@
       //background-size: 320px 640px;
       //background-position: ;
     }
+  }
+
+  .promo__wrapper {
+    width: 1128px;
+    padding: 83px 33px 0 80px;
+  }
+
+  .promo__caption {
+    width: 874px;
+    margin-bottom: 57px;
+  }
+
+  .promo__list {
+    width: 684px;
+    margin-bottom: 59px;
   }
 }

@@ -62,11 +62,22 @@
   .promo-list__item {
     font-size: 18px;
     line-height: 22px;
+    margin-bottom: 25px;
+
+    &--ice::before {
+      top: 11px;
+    }
+
+    &--delivery::before {
+      left: -4px;
+      top: -5px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo-list__item {
     line-height: normal;
+    max-width: 461px;
   }
 }

@@ -1,0 +1,106 @@
+.news-card {
+  border-radius: 40px;
+  border: 2px solid $color-primary;
+  width: 268px;
+  padding: 42px 15px 70px 14px;
+  position: relative;
+
+  &--discounts {
+    padding-top: 28px;
+  }
+
+  &--mix {
+    padding-top: 52px;
+  }
+
+  &::after {
+    content: "";
+    width: 76px;
+    height: 32px;
+    display: block;
+    background-image: url("../../images/icons/stack.svg#news-branch");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 23px;
+    left: calc(50% - 37px);
+  }
+}
+
+.news-card__break {
+  display: none;
+}
+
+.news-card__caption {
+  margin: 0 auto 28px;
+
+  .news-card--discounts & {
+    width: 203px;
+    margin-bottom: 18px;
+  }
+
+  .news-card--mix & {
+    margin-bottom: 42px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .news-card {
+    width: 348px;
+    padding: 47px 15px 103px 14px;
+
+    &--discounts {
+      padding-top: 31px;
+    }
+
+    &--mix {
+      padding-top: 64px;
+    }
+
+    &::after {
+      width: 96px;
+      height: 40px;
+      left: calc(50% - 48px);
+      bottom: 40px;
+    }
+  }
+
+  .news-card__break {
+    display: inherit;
+  }
+
+  .news-card__caption {
+    margin: 0 auto 44px;
+
+    .news-card--discounts & {
+      width: 250px;
+      margin-bottom: 25px;
+    }
+
+    .news-card--mix & {
+      margin-bottom: 58px;
+    }
+  }
+
+  .news-card--mix .news__text {
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .news-card {
+    width: 360px;
+    padding-bottom: 107px;
+  }
+
+  .news-card__caption {
+    margin-bottom: 38px;
+
+    .news-card--discounts & {
+      margin-bottom: 21px;
+    }
+
+    .news-card--mix & {
+      margin-bottom: 54px;
+    }
+  }
+}

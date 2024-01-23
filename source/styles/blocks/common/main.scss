@@ -1,3 +1,44 @@
 .main {
   flex-grow: 1;
+  background-color: #fbfcfe;
+}
+
+.main__promo {
+  margin-bottom: 60px;
+}
+
+.main__catalog {
+  margin-bottom: 64px;
+}
+
+.main__news {
+  margin-bottom: 74px;
+}
+
+.main__contacts {
+  margin-bottom: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .main__promo {
+    margin-bottom: 102px;
+  }
+
+  .main__catalog {
+    margin-bottom: 73px;
+  }
+
+  .main__contacts {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main__catalog {
+    margin-bottom: 98px;
+  }
+
+  .main__contacts {
+    margin-bottom: 81px;
+  }
 }

@@ -1,0 +1,176 @@
+.address {
+  font-style: normal;
+  width: 266px;
+  margin: 0 auto;
+  padding-left: 35px;
+}
+
+.address__link {
+  display: inline-block;
+  color: inherit;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    color: $color-primary-hover;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-primary;
+  }
+
+  &::before {
+    content: "";
+    background-color: #000000;
+    display: block;
+    width: 15px;
+    height: 23px;
+    mask-image: url("../../images/icons/stack.svg#leaf-address");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    position: absolute;
+    left: -27px;
+    top: 2px;
+  }
+
+  &:hover::before,
+  &:focus::before,
+  &:focus-visible::before {
+    background-color: $color-primary-hover;
+  }
+
+  &:active::before {
+    background-color: $color-primary;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.address__address {
+  font-size: 14px;
+  margin: 0 0 16px 0;
+  padding: 0;
+  position: relative;  
+}
+
+.address__phone {
+  display: block;
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 28px;
+  position: relative;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    color: $color-primary-hover;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-primary;
+  }
+
+  &::before {
+    content: "";
+    background-color: #000000;
+    display: block;
+    width: 15px;
+    height: 20px;
+    mask-image: url("../../images/icons/stack.svg#phone-address");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    position: absolute;
+    left: -27px;
+    top: 0;
+  }
+
+  &:hover::before,
+  &:focus::before,
+  &:focus-visible::before {
+    background-color: $color-primary-hover;
+  }
+
+  &:active::before {
+    background-color: $color-primary;
+  }
+}
+
+.address__email {
+  display: block;
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 33px;
+  position: relative;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    color: $color-primary-hover;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-primary;
+  }
+
+  &::before {
+    content: "";
+    background-color: #000000;
+    display: block;
+    width: 19px;
+    height: 16px;
+    mask-image: url("../../images/icons/stack.svg#email-address");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    position: absolute;
+    top: 2px;
+    left: -29px;
+  }
+
+  &:hover::before,
+  &:focus::before,
+  &:focus-visible::before {
+    background-color: $color-primary-hover;
+  }
+
+  &:active::before {
+    background-color: $color-primary;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .address {
+    width: 404px;
+  }
+
+  .address__address,
+  .address__phone,
+  .address__email {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .address__link {
+    &::before {
+      left: -28px;
+      top: -3px;
+    }
+  }
+
+  .address__address {
+    margin-bottom: 24px;
+  }
+
+  .address__phone {
+    margin-bottom: 23px;
+  }
+
+  .address__email {
+    margin-bottom: 46px;
+  }
+}

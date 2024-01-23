@@ -1,0 +1,46 @@
+.card {
+  width: 264px;
+  box-shadow: 0 4px 4px 0 rgba(88, 13, 101, 0.15);
+  border-radius: 40px;
+  margin: 0 auto;
+  padding-bottom: 54px;
+}
+
+.card__link {
+  display: block;
+  margin-bottom: 28px;
+}
+
+.card__image {
+  display: block;
+  border-radius: 40px 40px 0 0;
+}
+
+.card__price {
+ // margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 12px;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 36px;
+}
+
+.card__definition {
+  margin: 0;
+  padding: 0;
+}
+
+.card__caption-link {
+  display: block;
+  margin-bottom: 27px;
+}
+
+.card__button {
+  margin: 0 auto;
+}

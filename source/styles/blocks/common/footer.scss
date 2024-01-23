@@ -19,7 +19,8 @@
 @media (min-width: $tablet-width) {
   .footer__wrapper {
     max-width: 768px;
-    grid-template-columns: 221px 238px 153px;
+    grid-template-columns: 226px 238px 153px;
+    padding: 29px 25px 20px 21px;
   }
 
   .footer__logo-academy {
@@ -31,5 +32,6 @@
   .footer__wrapper {
     max-width: 1180px;
     grid-template-columns: 428px 440px 153px;
+    padding-left: 27px;
   }
 }

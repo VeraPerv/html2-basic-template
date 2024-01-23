@@ -1,14 +1,14 @@
 .button {
   display: block;
+  font-family: "Raleway", "Arial", sans-serif;
   background-color: $color-secondary;
-  font-family: inherit;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1px;
   text-align: center;
-  border-radius: 30px;
+  border-radius: 40px;
   color: #fbfcfe;
 
   &:hover,
@@ -27,12 +27,20 @@
     box-shadow: 0 4px 4px 0 rgba(88, 13, 101, 0.25);
     padding: 16px 10px;
   }
+
+  &--middle {
+    width: 220px;
+    padding: 14px 10px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .button {
     &--big {
       width: 336px;
+      font-size: 28px;
+      letter-spacing: 1.4px;
+      padding: 16px 10px 19px;
     }
   }
 }

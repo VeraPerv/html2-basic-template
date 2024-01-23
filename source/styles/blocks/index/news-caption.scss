@@ -1,0 +1,15 @@
+.news-caption {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  line-height: normal;
+  font-size: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .news-caption {
+    font-size: 28px;
+  }
+}
