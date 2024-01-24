@@ -1,0 +1,62 @@
+.form-group {
+  padding: 0 26px;
+  width: 320px;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+    width: 228px;
+    height: 32px;
+    display: block;
+    background-image: url("../../images/icons/stack.svg#branches");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto 51px;
+  }
+}
+
+.form-group__type {
+  margin-bottom: 34px;
+}
+
+.form-group__storage {
+  margin-bottom: 15px;
+}
+
+.form-group__delivery {
+  margin-bottom: 9px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-group {
+    width: 536px;
+
+    &::before {
+      width: 296px;
+      height: 42px;
+      margin-bottom: 72px;
+    }
+  }
+
+  .form-group__type {
+    margin-bottom: 49px;
+  }
+
+  .form-group__storage {
+    margin-bottom: 31px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-group {
+    width: 842px;
+
+    &::before {
+      margin-bottom: 62px;
+    }
+  }
+
+  .form-group__type {
+    margin-bottom: 56px;
+  }
+}

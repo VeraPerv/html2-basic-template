@@ -13,6 +13,12 @@
     font-family: "Raleway", "Arial", sans-serif;
     font-size: 28px;
   }
+
+  &--form {
+    font-family: "Raleway", "Arial", sans-serif;
+    text-align: left;
+    font-size: 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -20,6 +26,10 @@
     font-size: 48px;
 
     &--middle {
+      font-size: 28px;
+    }
+
+    &--form {
       font-size: 28px;
     }
   }
@@ -30,6 +40,10 @@
     font-size: 52px;
 
     &--middle {
+      font-size: 28px;
+    }
+
+    &--form {
       font-size: 28px;
     }
   }

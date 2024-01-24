@@ -1,0 +1,25 @@
+.storage {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.storage__caption {
+  margin-bottom: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .storage__caption {
+    margin-bottom: 33px;
+  }
+
+  .storage__list {
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .storage__caption {
+    margin-bottom: 42px;
+  }
+}

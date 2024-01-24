@@ -1,6 +1,10 @@
 .main {
   flex-grow: 1;
   background-color: #fbfcfe;
+
+  &--form {
+    background-color: #ffffff;
+  }
 }
 
 .main__promo {

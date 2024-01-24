@@ -1,0 +1,21 @@
+.delivery {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.delivery__caption {
+  margin-bottom: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .delivery__caption {
+    margin-bottom: 31px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .delivery__caption {
+    margin-bottom: 38px;
+  }
+}

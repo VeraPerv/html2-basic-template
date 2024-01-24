@@ -1,0 +1,103 @@
+.checkbox-storage {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.checkbox-storage__item {
+  padding-left: 35px;
+  margin-bottom: 19px;
+}
+
+.checkbox-storage__label {
+  position: relative;
+  display: inline-block;
+  min-height: 24px;
+  padding-top: 9px;
+  max-width: 170px;
+  cursor: pointer;
+
+  &:hover::before,
+  &:focus::before,
+  &:focus-visible::before {
+    border-color: $color-primary-hover;
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:focus-visible::after {
+    background-color: $color-primary-hover;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -35px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: 2px solid $color-primary;
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 13px;
+    left: -29px;
+    width: 14px;
+    height: 11px;
+    //display: block;
+    mask-image: url("../../images/icons/stack.svg#check-mark");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $color-primary;
+
+    .checkbox-storage__input:checked ~ & {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox-storage {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    column-gap: 47px;
+    grid-template-areas:
+      "a c"
+      "b .";
+  }
+
+  .checkbox-storage__item {
+    margin-bottom: 17px;
+
+    &:first-child {
+      grid-area: a;
+    }
+
+    &:nth-child(2) {
+      grid-area: b;
+    }
+
+    &:nth-child(3) {
+      grid-area: c;
+    }
+  }
+
+  .checkbox-storage__label {
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 190px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkbox-storage {
+    grid-template-columns: 190px 257px 224px;
+    column-gap: 14px;
+    grid-template-areas: "a b c";
+  }
+}

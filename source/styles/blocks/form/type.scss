@@ -1,0 +1,21 @@
+.type {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.type__caption {
+  margin-bottom: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .type__caption {
+    margin-bottom: 34px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .type__caption {
+    margin-bottom: 42px;
+  }
+}

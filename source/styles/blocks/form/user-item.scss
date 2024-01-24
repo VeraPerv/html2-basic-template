@@ -1,0 +1,50 @@
+.user-item__input {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 20px;
+  border: 1px solid $color-primary;
+  padding: 15px 12px;
+  width: 100%;
+  cursor: pointer;
+
+  &::placeholder {
+    color: rgba(142, 152, 146, 0.7);
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    border-color: $color-primary-hover;
+    outline: none;
+  }
+
+  &:not(:placeholder-shown) {
+    color: #000000;
+    border-color: $color-primary-hover;
+  }
+}
+
+.user-item__name {
+  font-size: 14px;
+  display: block;
+  margin-left: 12px;
+  margin-bottom: 6px;
+
+  &::after {
+    content: "*";
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    color: #ff8282;
+    margin-left: 4px;
+  }
+}
+
+.user-item__error {
+  display: none;
+  color: #ff8282;
+  line-height: 20px;
+}
