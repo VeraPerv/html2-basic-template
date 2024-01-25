@@ -1,5 +1,8 @@
 @media (max-width: $mobile-width-only) {
   .nav {
+    margin: 0 auto;
+    min-height: 77px;
+
     &--opened .toggle {
       width: 35px;
       height: 35px;
@@ -57,9 +60,26 @@
     }
 
     &--opened .nav__button {
-      top: 7px;
+      top: 17px;
       right: 25px;
       position: absolute;
+    }
+
+    &--opened .nav__list {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 59px;
+      background-color: #f1f6fc;
+      min-height: 369px;
+      min-width: 320px;
+      margin: 0 auto;
+      padding-top: 32px;
+    }
+
+    &--closed {
+      min-height: 68px;
     }
 
     &--closed .toggle {
@@ -101,16 +121,32 @@
     &--closed .logo {
       padding: 10px 26px 4px;
     }
+
+    &--closed .nav__logo {
+      margin: 0;
+    }
+
+    &--closed .nav__wrapper {
+      min-height: 68px;
+    }
+  }
+
+  .nav__logo {
+    margin-left: 26px;
+    margin-top: 10px;
+  }
+
+  .nav__wrapper {
+    box-shadow: 0 4px 4px 0 rgba(88, 13, 101, 0.25);
+    position: relative;
+    z-index: 2;
   }
 
   .nav__logo-wrapper {
     position: relative;
     max-width: 320px;
     margin: 0 auto;
-  }
-
-  .nav__wrapper {
-    box-shadow: 0 4px 4px 0 rgba(88, 13, 101, 0.25);
+    min-height: 68px;
   }
 }
 

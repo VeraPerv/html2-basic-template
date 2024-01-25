@@ -33,9 +33,12 @@
 @media (max-width: $mobile-width-only) {
   .menu {
     display: inherit;
+    padding: 22px 10px 10px 29px;
+  }
+
+  .menu__item {
     max-width: 320px;
-    margin: 0 auto;
-    padding: 23px 10px 10px 29px;
+    margin: 0 auto 8px;
   }
 }
 
