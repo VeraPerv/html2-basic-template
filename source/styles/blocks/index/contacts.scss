@@ -1,54 +1,105 @@
+.contacts {
+  padding-top: 132px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 228px;
+    height: 32px;
+    display: block;
+    background-image: url("../../images/icons/stack.svg#branches");
+    background-repeat: no-repeat;
+    background-position: center;
+   // margin: 0 auto 72px;
+    position: absolute;
+    top: 39px;
+    left: calc(50% - 111px);
+  }
+}
+
 .contacts__caption {
-  margin: 0 auto 70px;
+  margin: 0 auto 64px;
+  padding: 0 15px 0 6px;
+}
+
+.contacts--index .contacts__caption {
+  margin: 11px auto 71px;
 }
 
 .contacts__text {
-  margin: 0 auto 34px;
+  margin: 0 auto 35px;
   font-size: 16px;
   width: 253px;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 166px;
+
+    &::before {
+      width: 296px;
+      height: 42px;
+      top: 50px;
+      left: calc(50% - 148px);
+    }
+
+    &--index .contacts__caption {
+      margin: -1px auto 71px;
+    }
+  }
+
   .contacts__caption {
-    width: 335px;
+    //padding: 0 25px 0 6px;
+    width: 380px;
     margin-bottom: 72px;
+    padding: 0 25px 0 6px;
   }
 
   .contacts__text {
     font-size: 20px;
     width: 535px;
     margin-bottom: 27px;
+    padding-right: 5px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
     display: grid;
-    grid-template-columns: 553px 550px;
-    width: 1129px;
+    grid-template-columns: 557px 616px;
+    width: 1134px;
     margin: 0 auto;
-    column-gap: 49px;
+    column-gap: 11px;
+    padding-top: 191px;
+    align-items: start;
+
+    &::before {
+      top: 51px;
+      left: calc(50% - 149px);
   }
 
-  .contacts__caption {
-    grid-column: 2/3;
-    width: 390px;
-    margin-top: 25px;
-    margin-bottom: 72px;
-  }
+    .contacts__caption {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      margin-bottom: 72px;
+      width: 546px;
+      margin-left: 14px;
+    }
 
-  .contacts__text {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
+    .contacts__text {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      padding-right: 0;
+    }
 
-  .contacts__address {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
+    .contacts__address {
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
 
-  .contacts__map-wrapper {
-    grid-row: 1/4;
+    .contacts__map-wrapper {
+      grid-row: 1/4;
+    }
   }
 }

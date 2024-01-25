@@ -21,6 +21,10 @@
   }
 }
 
+.heading__word {
+  padding-left: 8px;
+}
+
 @media (min-width: $tablet-width) {
   .heading {
     font-size: 48px;
@@ -32,6 +36,10 @@
     &--form {
       font-size: 28px;
     }
+  }
+
+  .heading__word {
+    padding-left: 15px;
   }
 }
 
@@ -46,5 +54,9 @@
     &--form {
       font-size: 28px;
     }
+  }
+
+  .heading__word {
+    padding-left: 15px;
   }
 }

@@ -63,6 +63,7 @@
 
 @media (min-width: $tablet-width) {
   .checkbox-storage {
+    width: 484px;
     display: grid;
     grid-template-columns: 230px 230px;
     column-gap: 47px;

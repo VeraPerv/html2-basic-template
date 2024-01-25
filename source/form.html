@@ -151,7 +151,7 @@
           <ul class="delivery__list radio">
             <li class="radio__item">
               <input class="radio__input visually-hidden" type="radio" id="delivery" name="delivery" checked>
-              <label class="radio__label" for="delivery">Доставка<br class="radio__break"> (по СПБ в пределах
+              <label class="radio__label" for="delivery">Доставка<br class="radio__break"> (по СПБ в пределах <span class="radio__word">
                 КАД)</label>
             </li>
             <li class="radio__item">
@@ -167,38 +167,41 @@
           <ul class="user__list">
             <!--класс error для инпута выводит ошибку-->
             <li class="user__item user-item">
-              <label class="user-item__name" for="name">Имя</label>
+              <label class="user-item__label" for="name">Имя</label>
               <input class="user-item__input" type="text" id="name" name="name" placeholder="Как к вам обращаться?"
                 required>
               <span class="user-item__error">Подсказка</span>
             </li>
-
             <li class="user__item user-item">
-              <label class="user-item__name" for="phone">Телефон</label>
+              <label class="user-item__label" for="phone">Телефон</label>
               <input class="user-item__input" id="phone" name="phone" type="tel" placeholder="+7 ххх ххх хх хх"
                 required>
               <span class="user-item__error">Подсказка</span>
             </li>
             <li class="user__item user-item">
-              <label class="user-item__name" for="email">Email</label>
-
+              <label class="user-item__label" for="email">Email</label>
               <input class="user-item__input" id="email" name="email" type="email" placeholder="Ваш email" required>
             </li>
-
             <li class="user__item user-item user-item--address">
-            <label class="user-item__name" for="address">Адрес</label>
-            <textarea class="comment__text" name="address" id="address"
-              placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <label class="user-item__label" for="address">Адрес</label>
+            <textarea class="user-item__input" name="address" id="address"
+              placeholder="Адрес в Санкт-Петербурге"></textarea>
+              <span class="user-item__error">Подсказка</span>
             </li>
-
+            <li class="user__item user-item user-item--comment">
+              <label class="user-item__label" for="comment">Пожелания к заказу</label>
+              <textarea class="user-item__input" name="comment" id="comment"
+                placeholder="Чем мы можем вам помочь?"></textarea>
+              </li>
           </ul>
         </fieldset>
+        <button class="form-group__button button button--big" type="submit">Заказать</button>
       </form>
     </section>
 
     <section class="main__contacts contacts">
-      <h2 class="contacts__caption heading">Где забрать
-        ягоды?</h2>
+      <h2 class="contacts__caption heading">Где забрать <span class=heading__word>ягоды? </span>
+      </h2>
       <p class="contacts__text">Забери ягоды с нашего склада
         по адресу: </p>
       <address class="contacts__address address">

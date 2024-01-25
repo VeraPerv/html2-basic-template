@@ -19,20 +19,25 @@
 .logo-academy__text {
   font-size: 11px;
   line-height: normal;
-  padding-top: 8px;
+  padding-top: 11px;
+  max-width: 83px;
 }
 
 .logo-academy__icon {
   display: block;
+  margin-top: 5px;
 }
 
 @media (min-width: $tablet-width) {
   .logo-academy {
-    padding-top: 10px;
+    padding-top: 5px;
+    column-gap: 7px;
   }
 
   .logo-academy__text {
     font-size: 16px;
+    max-width: 121px;
+    //margin-left: -1px;
   }
 
   .logo-academy__icon {

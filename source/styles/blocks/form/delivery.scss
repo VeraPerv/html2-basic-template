@@ -1,7 +1,9 @@
 .delivery {
   border: none;
   margin: 0;
-  padding: 0;
+  padding: 0 26px;
+  width: 320px;
+
 }
 
 .delivery__caption {
@@ -15,6 +17,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .delivery {
+    width: 100%;
+    padding: 0;
+  }
+
   .delivery__caption {
     margin-bottom: 38px;
   }

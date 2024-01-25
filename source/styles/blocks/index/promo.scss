@@ -21,7 +21,7 @@
 }
 
 .promo__link {
-  margin: 0 auto;
+  margin: 0 auto 10px;
 }
 
 .promo__list {
@@ -31,6 +31,7 @@
 @media (min-width: $tablet-width) {
   .promo {
     min-height: 924px;
+    padding-top: 144px;
     background-image: url("../../../images/promo-tablet@2x@1x.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -41,14 +42,14 @@
   }
 
   .promo__wrapper {
-    width: 768px;
-    padding: 83px 33px 0 26px;
+    width: 703px;
+    //padding: 83px 33px 0 26px;
     margin: 0 auto;
   }
 
   .promo__caption {
     margin-left: auto;
-    width: 537px;
+    width: 539px;
     margin-bottom: 49px;
   }
 

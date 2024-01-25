@@ -1,7 +1,8 @@
 .user {
   border: none;
   margin: 0;
-  padding: 0;
+  padding: 0 26px;
+  width: 320px;
 }
 
 .user__list {
@@ -16,5 +17,54 @@
 
 .user__item {
   margin-bottom: 38px;
+
+  &:last-child {
+    margin-bottom: 28px;
+  }
 }
 
+@media (min-width: $tablet-width) {
+  .user {
+    width: 624px;
+    padding: 0;
+  }
+
+  .user__caption {
+    margin: 0 auto 42px;
+  }
+
+  .user__list {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    column-gap: 24px;
+    grid-template-areas:
+      "a a"
+      "b c"
+      "d d"
+      "e e";
+  }
+
+  .user__item {
+    &:last-child {
+      margin-bottom: 36px;
+    }
+
+    &:first-child {
+      grid-area: a;
+    }
+
+    &:nth-child(4) {
+      grid-area: d;
+    }
+
+    &:nth-child(5) {
+      grid-area: e;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user__caption {
+    margin: 0 0 51px;
+  }
+}

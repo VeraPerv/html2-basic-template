@@ -1,7 +1,8 @@
 .storage {
   border: none;
   margin: 0;
-  padding: 0;
+  padding: 0 26px;
+  width: 320px;
 }
 
 .storage__caption {
@@ -19,6 +20,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .storage {
+    width: 100%;
+    padding: 0;
+  }
+
   .storage__caption {
     margin-bottom: 42px;
   }

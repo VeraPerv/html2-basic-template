@@ -136,6 +136,8 @@
 
 @media (min-width: $tablet-width) {
   .checkbox {
+    width: 484px;
+    //margin: 0 auto;
     grid-template-columns: 140px 140px 140px;
     column-gap: 44px;
     row-gap: 17px;
@@ -186,6 +188,7 @@
 
 @media (min-width: $desktop-width) {
   .checkbox {
+    width: 100%;
     grid-template-columns: 121px 119px 119px 137px 120px;
     column-gap: 45px;
     grid-template-areas:

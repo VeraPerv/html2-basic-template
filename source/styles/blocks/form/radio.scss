@@ -13,6 +13,10 @@
   }
 }
 
+.radio__word {
+  display: inline-block;
+  margin-left: 5px;
+}
 
 .radio__input:focus ~ .radio__label::before,
 .radio__input:focus-visible ~ .radio__label::before {
@@ -74,7 +78,7 @@
     position: absolute;
     top: 33px;
     left: -27px;
-    width: 9px;
+    width: 8px;
     height: 8px;
     border-radius: 50%;
     background-color: $color-primary;
@@ -129,6 +133,10 @@
       top: 27px;
       left: -28px;
     }
+  }
+
+  .radio__word {
+    margin-left: unset;
   }
 }
 

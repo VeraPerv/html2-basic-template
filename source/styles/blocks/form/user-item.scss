@@ -1,3 +1,27 @@
+.user-item {
+  &:nth-child(4) {
+    margin-bottom: 33px;
+  }
+
+  &--address .user-item__input {
+    min-height: 88px;
+    resize: none;
+    width: 100%;
+    padding: 16px 12px;
+  }
+
+  &--comment .user-item__input {
+    min-height: 125px;
+    resize: none;
+    width: 100%;
+    padding: 16px 12px;
+  }
+
+  &--comment .user-item__label::after {
+    display: none;
+  }
+}
+
 .user-item__input {
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 16px;
@@ -27,7 +51,7 @@
   }
 }
 
-.user-item__name {
+.user-item__label {
   font-size: 14px;
   display: block;
   margin-left: 12px;
@@ -47,4 +71,28 @@
   display: none;
   color: #ff8282;
   line-height: 20px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .user-item--address .user-item__input {
+    line-height: 10px;
+    padding: 19px 12px 12px;
+    min-height: unset;
+  }
+
+  .user-item__input {
+    width: 300px;
+  }
+
+  .user-item__label {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 2px;
+  }
+
+  .user-item--comment .user-item__input {
+    min-height: 144px;
+  }
+  
 }

@@ -1,8 +1,11 @@
 .type {
   border: none;
   margin: 0;
-  padding: 0;
-}
+ // padding: 0;
+  padding: 0 26px;
+  width: 320px;
+ }
+
 
 .type__caption {
   margin-bottom: 25px;
@@ -12,9 +15,17 @@
   .type__caption {
     margin-bottom: 34px;
   }
+
+  .type {
+    padding: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .type {
+    width: 100%;
+  }
+
   .type__caption {
     margin-bottom: 42px;
   }
