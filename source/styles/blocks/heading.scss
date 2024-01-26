@@ -23,6 +23,11 @@
 
 .heading__word {
   padding-left: 8px;
+  display: inline-block;
+
+  &--contacts {
+    padding-left: unset;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -2,20 +2,16 @@
   min-height: 640px;
   padding-top: 60px;
   background-color: #cbd0db;
-  background-image: url("../../../images/promo-mobile@2x@1x.jpg");
+  background-image: url("../../images/promo-mobile@2x@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  //background-position: ;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../../images/promo-mobile@2x@2x.jpg");
-    //background-size: 320px 640px;
-    //background-position: ;
+    background-image: url("../../images/promo-mobile@2x@2x.jpg");
   }
 }
 
 .promo__caption {
-  //text-align: center;
   padding: 0 15px;
   margin-bottom: 37px;
 }
@@ -32,18 +28,15 @@
   .promo {
     min-height: 924px;
     padding-top: 144px;
-    background-image: url("../../../images/promo-tablet@2x@1x.jpg");
+    background-image: url("../../images/promo-tablet@2x@1x.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../../images/promo-tablet@2x@2x.jpg");
-      //background-size: 320px 640px;
-      //background-position: ;
+      background-image: url("../../images/promo-tablet@2x@2x.jpg");
     }
   }
 
   .promo__wrapper {
     width: 703px;
-    //padding: 83px 33px 0 26px;
     margin: 0 auto;
   }
 
@@ -67,12 +60,10 @@
   .promo {
     min-height: 801px;
     padding-top: 89px;
-    background-image: url("../../../images/promo-desktop@2x@1x.jpg");
+    background-image: url("../../images/promo-desktop@2x@1x.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../../images/promo-desktop@2x@2x.jpg");
-      //background-size: 320px 640px;
-      //background-position: ;
+      background-image: url("../../images/promo-desktop@2x@2x.jpg");
     }
   }
 
