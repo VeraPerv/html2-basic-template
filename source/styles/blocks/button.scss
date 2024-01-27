@@ -13,6 +13,7 @@
   text-align: center;
   border-radius: 40px;
   color: #fbfcfe;
+  cursor: pointer;
 
   &:hover,
   &:focus,
@@ -23,6 +24,20 @@
 
   &:active {
     background-color: rgba(106, 16, 122, 0.6);
+  }
+
+  &--disabled,
+  &:disabled {
+    color: rgba(142, 152, 146, 0.3);
+    background-color: rgba(142, 152, 146, 0.3);
+    cursor: auto;
+
+    &:hover,
+    &:focus,
+    &:focus-visible,
+    &:active {
+      background-color: rgba(142, 152, 146, 0.3);
+    }
   }
 
   &--big {

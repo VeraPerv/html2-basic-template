@@ -34,17 +34,17 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding-top: 166px;
+    padding-top: 169px;
 
     &::before {
       width: 296px;
       height: 42px;
-      top: 50px;
+      top: 52px;
       left: calc(50% - 148px);
     }
 
     &--index .contacts__caption {
-      margin: -1px auto 71px;
+      margin: -1px auto 73px;
     }
   }
 
@@ -69,12 +69,16 @@
     width: 1134px;
     margin: 0 auto;
     column-gap: 11px;
-    padding-top: 191px;
+    padding-top: 193px;
     align-items: start;
 
+    &--form {
+      padding-top: 190px;
+    }
+
     &::before {
-      top: 51px;
-      left: calc(50% - 149px);
+      top: 50px;
+      left: calc(50% - 146px);
     }
 
     .contacts__caption {

@@ -79,5 +79,17 @@
   .promo-list__item {
     line-height: normal;
     max-width: 461px;
+
+    &--ice::before {
+      width: 25px;
+      height: 25px;
+      top: 9px;
+      left: -1px;
+    }
+
+    &--deliver::before {
+      left: -4px;
+      top: -4px;
+    }
   }
 }

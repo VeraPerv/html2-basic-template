@@ -24,6 +24,18 @@
   &:active {
     color: $color-primary;
   }
+
+  &--disabled {
+    color: rgba(142, 152, 146, 0.3);
+    cursor: auto;
+
+    &:hover,
+    &:focus,
+    &:focus-visible,
+    &:active {
+      color: rgba(142, 152, 146, 0.3);
+    }
+  }
 }
 
 .menu__item {

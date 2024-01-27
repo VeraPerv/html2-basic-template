@@ -4,6 +4,8 @@
   border-radius: 40px;
   margin: 0 auto;
   padding-bottom: 44px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card__link {
@@ -28,6 +30,7 @@
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 38px;
+  flex-grow: 1;
 }
 
 .card__term {
@@ -43,6 +46,40 @@
   display: block;
   margin-bottom: 26px;
   padding: 0 15px;
+
+  &:focus-visible {
+    outline: none;
+
+    .card__caption {
+      color: $color-primary-hover;
+      outline: none;
+    }
+  }
+}
+
+.card__caption {
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    color: $color-primary-hover;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(15, 128, 93, 0.5);
+  }
+
+  &--disabled {
+    color: rgba(142, 152, 146, 0.3);
+    cursor: auto;
+
+    &:hover,
+    &:focus,
+    &:focus-visible,
+    &:active {
+      color: rgba(142, 152, 146, 0.3);
+    }
+  }
 }
 
 .card__button {

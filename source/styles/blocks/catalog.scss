@@ -17,10 +17,13 @@
   .catalog__list {
     display: grid;
     grid-template-columns: 264px 264px;
-    //margin-bottom: 76px;
     column-gap: 52px;
     row-gap: 28px;
-    width: 580px;
+    width: 581px;
+  }
+
+  .catalog__caption {
+    margin-bottom: 72px;
   }
 }
 
@@ -30,10 +33,10 @@
     grid-template-columns: repeat(4, 264px);
     column-gap: 24px;
     row-gap: 28px;
-    width: 1128px;
+    width: 1130px;
   }
 
   .catalog__caption {
-    margin-bottom: 89px;
+    margin-bottom: 90px;
   }
 }

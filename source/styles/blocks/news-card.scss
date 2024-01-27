@@ -26,14 +26,6 @@
   }
 }
 
-.news-card__break {
-  display: none;
-}
-
-.new-card__br {
-  display: none;
-}
-
 .news-card__caption {
   margin: 0 auto 28px;
 
@@ -68,10 +60,6 @@
     }
   }
 
-  .news-card__break {
-    display: inherit;
-  }
-
   .news-card__caption {
     margin: 0 auto 42px;
 
@@ -92,8 +80,13 @@
 
 @media (min-width: $desktop-width) {
   .news-card {
-    width: 360px;
-    padding-bottom: 107px;
+    width: 100%;
+    padding-bottom: 105px;
+
+    &::after {
+      left: calc(50% - 47px);
+      bottom: 42px;
+    }
   }
 
   .news-card__caption {

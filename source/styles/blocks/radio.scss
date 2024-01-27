@@ -40,6 +40,10 @@
   border-color: rgba(142, 152, 146, 0.7);
 }
 
+.radio__input:disabled ~ .radio__label::after {
+  background-color: rgba(142, 152, 146, 0.7);
+}
+
 .radio__label {
   position: relative;
   display: inline-block;

@@ -35,6 +35,10 @@
     }
   }
 
+  .promo__link {
+    margin-left: 180px;
+  }
+
   .promo__wrapper {
     width: 703px;
     margin: 0 auto;
@@ -47,7 +51,7 @@
   }
 
   .promo__list {
-    margin: 0 0 53px auto;
+    margin: 0 0 52px auto;
     width: 518px;
   }
 
@@ -80,5 +84,9 @@
   .promo__list {
     width: 684px;
     margin-bottom: 59px;
+  }
+
+  .promo__link {
+    margin: 0 auto 10px;
   }
 }

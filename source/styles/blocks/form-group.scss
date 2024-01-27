@@ -30,6 +30,10 @@
 .form-group__button {
   margin: 0 auto;
   padding: 16px 10px 16px 2px;
+
+  &:not(:first-child) {
+    margin-bottom: 10px;
+  }
 }
 
 @media (min-width: $tablet-width) {

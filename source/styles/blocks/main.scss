@@ -24,12 +24,12 @@
 }
 
 .main--form .main__contacts {
-  margin-bottom: 64px;
+  margin-bottom: 62px;
 }
 
 @media (min-width: $tablet-width) {
   .main__promo {
-    margin-bottom: 102px;
+    margin-bottom: 101px;
   }
 
   .main__catalog {
@@ -50,6 +50,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main__promo {
+    margin-bottom: 101px;
+  }
+
   .main__catalog {
     margin-bottom: 76px;
   }

@@ -47,9 +47,6 @@
   margin-bottom: 24px;
 }
 
-.news__breaks {
-  display: none;
-}
 
 @media (min-width: $tablet-width) {
   .news {
@@ -87,14 +84,6 @@
     margin-bottom: 27px;
   }
 
-  .news__break {
-    display: none;
-  }
-
-  .news__breaks {
-    display: inherit;
-  }
-
   .news__date {
     font-size: 16px;
     line-height: 20px;
@@ -110,8 +99,8 @@
   }
 
   .news__list {
-    grid-template-columns: repeat(3, 360px);
-    column-gap: 24px;
+    grid-template-columns: 360px 361px 360px;
+    column-gap: 22px;
     width: 1129px;
   }
 

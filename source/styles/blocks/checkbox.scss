@@ -79,6 +79,12 @@
 
 .checkbox__input:disabled ~ .checkbox__label::before {
   border-color: rgba(142, 152, 146, 0.7);
+  cursor: auto;
+}
+
+.checkbox__input:disabled ~ .checkbox__label::after {
+  background-color: rgba(142, 152, 146, 0.7);
+  cursor: auto;
 }
 
 .checkbox__label {
