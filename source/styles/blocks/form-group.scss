@@ -24,7 +24,7 @@
 }
 
 .form-group__user {
-  margin: 0 auto;
+  margin: 0 auto 2px;
 }
 
 .form-group__button {
@@ -61,7 +61,6 @@
 @media (min-width: $desktop-width) {
   .form-group {
     width: 842px;
-    margin: 0 auto;
     padding: 0 26px;
 
 
@@ -75,7 +74,7 @@
   }
 
   .form-group__user {
-    margin: 0 0 8px;
+    margin: 0 0 10px;
   }
 
   .form-group__button {

@@ -127,7 +127,6 @@
     left: -29px;
     width: 14px;
     height: 11px;
-    //display: block;
     mask-image: url("../../images/icons/stack.svg#check-mark");
     mask-repeat: no-repeat;
     mask-position: center;
@@ -142,7 +141,6 @@
 @media (min-width: $tablet-width) {
   .checkbox {
     width: 484px;
-    //margin: 0 auto;
     grid-template-columns: 140px 140px 140px;
     column-gap: 44px;
     row-gap: 17px;

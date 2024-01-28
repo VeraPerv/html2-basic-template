@@ -5,12 +5,13 @@
 @import "./global/fonts.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+
 @import "./blocks/body.scss";
 @import "./blocks/heading.scss";
 @import "./blocks/button.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/nav.scss";
+@import "./blocks/header.scss";
 @import "./blocks/menu.scss";
 @import "./blocks/toggle.scss";
 @import "./blocks/footer.scss";
@@ -24,8 +25,8 @@
 @import "./blocks/news.scss";
 @import "./blocks/news-caption.scss";
 @import "./blocks/news-card.scss";
-@import "./blocks/contacts.scss";
 @import "./blocks/address.scss";
+@import "./blocks/contacts.scss";
 @import "./blocks/form.scss";
 @import "./blocks/type.scss";
 @import "./blocks/storage.scss";

@@ -2,7 +2,7 @@
   min-height: 240px;
   padding-top: 185px;
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 
   &::before {
     content: "";
@@ -105,5 +105,9 @@
   .form__text {
     width: 535px;
     margin-bottom: 45px;
+  }
+
+  .form__form-group {
+    margin: 0 auto;
   }
 }

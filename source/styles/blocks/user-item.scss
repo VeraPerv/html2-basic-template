@@ -1,8 +1,4 @@
 .user-item {
-  &:nth-child(4) {
-    margin-bottom: 33px;
-  }
-
   &--address .user-item__input {
     min-height: 88px;
     resize: none;
@@ -28,6 +24,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+  display: block;
   border-radius: 20px;
   border: 1px solid $color-primary;
   padding: 15px 12px;
